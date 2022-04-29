@@ -35,6 +35,7 @@ public class Solution {
         nums[i] = nums[j];
         nums[j] = temp;
     }
+
 //  First try
     public void FirstTry(int[] nums, int k) {
         if (nums.length > 1) {
