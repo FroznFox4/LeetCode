@@ -15,7 +15,7 @@ class Solution {
     private Solution() {
     }
 
-    private static Solution obj = new Solution();
+    private static final Solution obj = new Solution();
 
     public static Solution getInstance() {
         return obj;
