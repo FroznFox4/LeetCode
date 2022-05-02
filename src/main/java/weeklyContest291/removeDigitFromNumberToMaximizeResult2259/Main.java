@@ -20,6 +20,8 @@ class Solution {
     public static Solution getInstance() {
         return obj;
     }
+
+//    Solution
     public String removeDigit(String number, char digit) {
 //  First
         List<String> digits = new ArrayList<>();
