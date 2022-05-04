@@ -27,12 +27,18 @@ class Solution {
     public boolean checkInclusion(String s1, String s2) {
         if (s1.length() > s2.length())
             return false;
+
         int[] s1map = new int[26];
         int[] s2map = new int[26];
+
         for (int i = 0; i < s1.length(); i++) {
             s1map[s1.charAt(i) - 'a']++;
             s2map[s2.charAt(i) - 'a']++;
         }
+//        s1 = abcd
+//        s1map = { abcd } -> { 1, 1, 1, 1, 0, 0, ... }
+//        s2 = bcde
+//        s2map = { bcde } -> { 0, 1, 1, 1, 1, 0, ... }
 
         int count = 0;
         for (int i = 0; i < 26; i++)
