@@ -59,7 +59,7 @@ class Solution {
                 int col = cur[1] + dir[0];
                 if (isValidIsland(row, col, island)) {
                     island[row][col] = 0;
-                    count ++;
+                    count++;
                     queue.add(new int[] { row, col } );
                 }
             }
