@@ -66,7 +66,7 @@ class Solution {
         } else if (cur1.next != null) {
             while (cur1.next != null)
                 if (cur1.val <= cur2.val && cur1.next.val >= cur2.val) {
-                    break;
+                break;
                 } else
                     cur1 = cur1.next;
             insertNode(cur1, cur2);
