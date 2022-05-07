@@ -46,7 +46,7 @@ class Solution {
             if (!nums.containsKey(num))
                 nums.put(num, 1);
             else
-                nums.replace(num, nums.get(num) + 1);
+                nums.put(num, nums.get(num) + 1);
         });
         n.forEach(num -> {
             int countNum = nums.get(num);
